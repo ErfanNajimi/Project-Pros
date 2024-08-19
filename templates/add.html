@@ -7,33 +7,33 @@
         {% csrf_token %}
         <div class="mb-3">
             <label for="id_title" class="form-label" style="color: #5e17eb; font-weight: bold;">Project Title</label>
-            {{ form.title }}
+            {{ project_form.title }}
         </div>
         <div class="mb-3">
             <label for="id_summary" class="form-label" style="color: #5e17eb; font-weight: bold;">Project Summary</label>
-            {{ form.summary }}
+            {{ project_form.summary }}
         </div>
         <div class="mb-3">
             <label for="id_collaborators" class="form-label" style="color: #5e17eb; font-weight: bold;">Collaborators</label>
-            {{ form.collaborators }}
+            {{ project_form.collaborators }}
         </div>
         <div class="mb-3">
             <label for="id_deployed_site" class="form-label" style="color: #5e17eb; font-weight: bold;">Deployed Site</label>
-            {{ form.deployed_site }}
+            {{ project_form.deployed_site }}
         </div>
         <div class="mb-3">
             <label for="id_github_repo" class="form-label" style="color: #5e17eb; font-weight: bold;">GitHub Repo</label>
-            {{ form.github_repo }}
+            {{ project_form.github_repo }}
         </div>
         <div class="mb-3">
             <label for="id_reflections" class="form-label" style="color: #5e17eb; font-weight: bold;">Reflections</label>
-            {{ form.reflections }}
+            {{ project_form.reflections }}
         </div>
         <div class="mb-3">
-            {{form.approved}} <label for="id_approved" class="form-check-label" style="color: #5e17eb; font-weight: bold;">Approved</label>
+            {{project_form.approved}} <label for="id_approved" class="form-check-label" style="color: #5e17eb; font-weight: bold;">Approved</label>
         </div>
         <div class="form-check">
-            {{ form.favourite }} <label for="id_favourite" class="form-check-label" style="color: #5e17eb; font-weight: bold;">Favourite</label>
+            {{ project_form.favourite }} <label for="id_favourite" class="form-check-label" style="color: #5e17eb; font-weight: bold;">Favourite</label>
         </div>
         <button type="submit" class="btn btn-primary mt-3" style="background-color: #5e17eb; border: none; padding: 10px 20px; font-size: 15px; cursor: pointer; border-radius: 4px; width: 100%;">Submit</button>
     </form>

@@ -59,9 +59,19 @@ def dashboard_content(request):
 
 def project_create_view(request):
     if request.method == 'POST':
-        form = project_detailForm(request.POST)
-        if form.is_valid():
+        project_form = project_detailForm(data=request.POST)
+        if project_form.is_valid():
+            project = project_form.save(commit=False)
+            project.account = request.user
+            project.save()
             return redirect('dashboard') 
-    else:
-        form = project_detailForm()
-    return render (request, 'add.html', {'form':form})
+
+    project_form = project_detailForm()
+
+    return render (
+        request,
+        'add.html',
+        {
+        'project_form':project_form,
+        }
+    )
