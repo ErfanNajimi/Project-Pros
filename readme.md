@@ -1,12 +1,12 @@
 # <span class="logo-highlight">Pro</span>ject <span class="logo-highlight">Pro</span>
 
-<img src="doc-assets/screenshots/Responsiveimage1.png" width="100%" height="100%">
+<img src="doc-assets/screenshots/image.png" width="100%" height="100%">
 
 A full-stack project built using the Django framework with Python, JavaScript, HTML and CSS. The aim was to create a functional website for users to add deployed projects and github repos that serves as a source of inspiration and help to others, as well as a place where users can celebrate each others achievements.
 
 # ABOUT
 
-<img src="doc-assets/screenshots/Responsiveimage2.png" width="100%" height="100%">
+<img src="doc-assets/screenshots/image.png" width="100%" height="100%">
 
 Project Pro is an app for users to celebrate each others' coding achievement, get inspiration from other developers, get tips from our tips section on problems they are currently facing in a project. 
 
@@ -55,14 +55,6 @@ As a user can I easily navigate the website through the navbar.
 As a user can I easily see other people's projects once i'm logged in.
 
 As a user am I privy to the top tips provided on the website.
-
-# Agile Development
-
-To get the minimum viable product we created a kanban board on github and listed all that needed to be done and moved them in order of todo, in progress, and done as the project progressed. This helped us to keep track of where we were lagging behind and where we were ahead.
-
-<img src="doc-assets/screenshots/Kanbanboard1.png" width="100%" height="100%">
-<img src="doc-assets/screenshots/Kanbanboard2.png" width="100%" height="100%">
-
 
 
 # WIREFRAMES
@@ -149,7 +141,7 @@ Git - for version control
 # Responsiveness
 We used the dev tools on chrome to test the website for responsiveness. We captured screenshots to demonstrate responsive design across mobile, tablet and laptop using UI Dev. On smaller screens the screen collapses to show a toggle bar for the nav links.
 
-<img src="doc-assets/screenshots/Responsiveimage2.png" width="100%" height="100%">
+<img src="doc-assets/screenshots/image.png" width="100%" height="100%">
 
 # Testing and Validation
 We used the W3 HTML Validator  to check the HTML on each of my site pages by Direct Input. However, the only error pointed out was the django language used.
@@ -157,54 +149,7 @@ We used the W3 HTML Validator  to check the HTML on each of my site pages by Dir
 We used the W3 CSS Validator to check my CSS script by Direct Input. We found no errors!.
 
 # Manual Testing Results
-# Todo List Page
-Test Result
-
-User must be logged in to add new todo item - Pass
-
-User must be logged in to delete todo list - Pass
-
-Users are notified when they log in - Pass
-
-
-# FOOTER/NAV BAR
-Test Result
-
-Navigation links functionality - Pass
-
-Social media links functionality - Pass
-
-# LOGIN PAGE
-Test Result
-
-Secure signup functionality - Pass
-
-Redirect after successful login - Pass
-
-# REGISTRATION PAGE
-Test Result
-
-Secure login functionality - Pass
-
-Redirect after successful registration - Pass
-
-# LOGOUT PAGE
-Test Result
-
-Logout functionality - Pass
-
-Redirect after successful logout - Pass
-
-Message pop up to confirm users have logged out - Pass
-
-# SECURITY
-Test Result
-
-Prevention of brute force actions via URL - Pass
-
-Redirect to sign-in page after attempted unauthorized action - Pass
-
-# Known Bugs
+We were not able to do any manual testing due to time constraints.
 
 
 
