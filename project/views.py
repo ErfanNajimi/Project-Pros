@@ -26,7 +26,11 @@ class HomeView(View):
 
 def dashboard_content(request):
 
-    projects = project_detail.objects.all().order_by("-favourite")
+    queryset = project_detail.objects.all().filter(account = request.user)
+    projects = queryset.order_by("-favourite")
+
+    projects_count = queryset.count()
+    awaiting_approval = queryset.filter(approved=False).count()
 
     search = request.GET.get("project-search")
     search_results = project_detail.objects.filter(title__icontains=search).values() if search != None else ''
@@ -47,6 +51,8 @@ def dashboard_content(request):
             'projects' : projects,
             'search_results' : search_results,
             'emoji_form' : emoji_form,
+            'projects_count': projects_count,
+            'awaiting_approval': awaiting_approval,
         },
     )
 

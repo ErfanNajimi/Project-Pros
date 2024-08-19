@@ -33,7 +33,7 @@ DEBUG = os.environ.get("DEBUG", "") == "1"
 
 ALLOWED_HOSTS = [
     ".herokuapp.com",
-    '8000-spencily-projectpros-zc4d5dxubx7.ws.codeinstitute-ide.net',
+    '.codeinstitute-ide.net',
 ]
 
 
@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     "project",
+    "top_tips",
 ]
 
 SITE_ID = 1

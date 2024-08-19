@@ -6,6 +6,7 @@
 {% url 'project' as project_url %}
 {% url 'dashboard' as dashboard_url %}
 {% url 'home' as home_url %}
+{% url 'top_tips' as top_tips_url %}
 
 
 <!DOCTYPE html>
@@ -44,6 +45,9 @@
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link {% if request.path == project_url %}is_active{% endif %}" href="{% url 'project' %}">Projects</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link {% if request.path == top_tips_url %}is_active{% endif %}" href="{% url 'top_tips' %}">Top Tips</a>
                         </li>
                         {% if user.is_authenticated %}
                         <li class="nav-item">
